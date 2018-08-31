@@ -1,14 +1,11 @@
 package ru.company.algorithms.sort;
 
 public class InsertionSort {
-    public static void main(String[] args) {
-        int[] a = new int[]{1, 2, 3, 2, 3, 6, 3, 7, 98};
-
-
+    public static void sort(int[] a) {
         for (int i = 1; i < a.length; i++) {
             int key = a[i];
             int j = i - 1;
-            while (j >= 0 && key > a[j]) {
+            while (j >= 0 && key < a[j]) {
                 a[j + 1] = a[j];
                 j--;
             }
@@ -16,6 +13,7 @@ public class InsertionSort {
         }
 
 
-        System.out.println();
+        int i[] = new int[10];
+
     }
 }
